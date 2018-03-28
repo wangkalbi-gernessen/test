@@ -1,0 +1,13 @@
+package jp.co.uzbekistanien.action;
+
+public class Tashkent {
+
+	public static void main(String[] args) {
+		System.out.println("Buenas noches");
+		System.out.println(circle(5));
+
+	}
+	public static double circle(int hankei){
+	return hankei*hankei*3.14;
+	}
+}

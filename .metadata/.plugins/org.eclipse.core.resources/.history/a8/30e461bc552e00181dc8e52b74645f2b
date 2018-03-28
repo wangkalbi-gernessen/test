@@ -1,0 +1,23 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		//Hello World!の出力
+		System.out.println("Hello World!");
+		System.out.println("London");
+		int a=18;
+		System.out.println(a);
+		char k='j';
+		System.out.println(k);
+		float h=(float)8/3;
+		System.out.println(h);
+		int u =10;
+		if( u <20){
+		System.out.println("m");
+		}
+		String b="山田"
+		if(b.equals("山田")){
+		System.out.println(b+"さん");
+		}
+	}
+}

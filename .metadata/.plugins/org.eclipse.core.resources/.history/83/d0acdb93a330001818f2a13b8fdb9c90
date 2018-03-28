@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+
+/**
+ * @author internousdev
+ *
+ */
+public class Person {
+
+	/**
+	 * @param args
+	 */
+	
+		public String phoneNumber=null;
+		public String address=null;
+}

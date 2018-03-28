@@ -1,0 +1,13 @@
+package jp.co.uzbekistanien.action;
+
+public class Tashkent {
+
+	public static void main(String[] args) {
+		System.out.println("Buenas noches");
+		System.out.println(gokei2(2,3));
+
+	}
+	public static int gokei2(int number1,int number2){
+	return number1*number2;
+	}
+}

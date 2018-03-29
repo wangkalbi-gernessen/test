@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.internousdev.login.action;
+
+/**
+ * @author internousdev
+ *
+ */
+public class LoginAction {
+
+}

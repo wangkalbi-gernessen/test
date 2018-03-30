@@ -1,4 +1,0 @@
-MyPageAction
-MyPageDAO
-MyPageDTO
-MyPagejsp

@@ -1,2 +1,0 @@
-BuyItemConfirm.jsp 1“ú
-BuyItemComplete.jsp 1“ú

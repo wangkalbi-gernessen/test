@@ -1,5 +1,0 @@
-１．yataberyouhin.sql
-２．user_info.sql
-３．m_category.sql
-４．product_info.sql
-残りは自由。

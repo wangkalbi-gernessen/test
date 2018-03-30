@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+body {
+	width: 464px;
+	height: 100%;
+	margin: 0 auto;
+	font-family:'Hiragino Kaku Gothic proN' , Meiryo , sans-serif;
+	text-align: center;
+}
+#main{
+	clear:both;
+	width:1200px;
+	height:200px;
+	margin:0 auto;
+
+}
+#main .menu1{
+    border: 5px solid #eaeaea;
+	width: 470px;
+	margin:0 auto;
+}
+
+#footer {
+	clear:both;
+	width: 1200px;
+	height:50px;
+	margin:0 auto;
+	text-align:center;
+}
+.footer_menu{
+	width:137px;
+	height:30px;
+	margin:0 auto;
+	font-size:12px;
+}
+.footer_menu_1 a{
+	float:left;
+}
+
+.footer_menu_2{
+	float:left;
+}

@@ -1,0 +1,32 @@
+--------アクションクラス--------------------------------------------
+
+フィールドの最下部に
+private String actionPage;
+
+public String execute(){}の最上部に
+actionPage = "「アクションクラス名」";
+session.put("actionPage", actionPage);
+
+if(session.get("loginFlg").toString().equals("false")){
+    return ERROR;
+}
+
+------------jsp--------------------------------------------------
+
+go「アクションクラス名」.jsp作成
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Go「アクションクラス名」</title>
+<meta http-equiv="refresh" content="0;URL=<s:url action='「アクションクラス名」' />">
+</head>
+<body>
+
+</body>
+</html>
+

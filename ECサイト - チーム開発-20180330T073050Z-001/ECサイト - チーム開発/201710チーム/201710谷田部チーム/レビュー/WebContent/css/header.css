@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+
+body {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Hiragino Kaku Gothic proN', Meiryo, sans-serif;
+}
+
+#top{
+	width:1100px;
+	height:100px;
+}
+
+#top .logo{
+	float: left;
+	width:300px;
+	height:90px;
+}
+.logo img {
+	width:250px;
+	height:80px;
+}
+
+.search{
+	width:700px;
+	height:60px;
+	margin-left:100px;
+}
+#top .search_category {
+	float: left;
+	width:150px;
+	margin-top:50px;
+}
+
+
+#top .search_free{
+	float: left;
+	width:180px;
+	margin-top:50px;
+}
+
+#top .button{
+	float: left;
+	width:30px;
+	margin-top:50px;
+}
+.sns a{
+	float: right;
+	width:40px;
+	height:20px;
+}
+#header {
+	width: 1200px;
+}
+
+#header .menu ul {
+	list-style: none;
+	padding: 10px;
+	margin: 0;
+}
+
+#header .menu li {
+	padding: 5px;
+	margin: 0;
+	float: left;
+}
+
+#header .menu li a {
+	display: block;
+	width: 90px;
+	border-bottom: 1px dotted #555;
+	text-decoration: none;
+	color: #555;
+	padding: 30px 50px 7px 70px;
+	margin: 0px 4px;
+	text-align: left;
+	font-size: 17px;
+}
+
+#header .menu li a:hover {
+	background: url(画像のアドレス) no-repeat left center;

@@ -1,0 +1,39 @@
+package com.internousdev.knit.action;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import com.internousdev.knit.dao.CartDAO;
+import com.internousdev.knit.dao.SettlementCompleteDAO;
+import com.internousdev.knit.dao.SettlementConfirmDAO;
+import com.internousdev.knit.dto.CartDTO;
+public class TestCartShow {
+
+	public static void main(String[] args) throws SQLException {
+
+		String userId;
+
+		userId ="internous";
+
+		CartDAO cartDAO =new CartDAO();
+
+		SettlementCompleteDAO settlementCompleteDAO = new SettlementCompleteDAO();
+
+		ArrayList<CartDTO> cartInfoList = new ArrayList<CartDTO>();
+		cartInfoList = cartDAO.showUserCartList(userId);
+
+		System.out.println("カートリストのUserId"+cartInfoList.get(0).getUserId());
+
+
+		int e;
+		e = settlementCompleteDAO.setPurchaseHistory(cartInfoList, userId);
+
+		System.out.println("カートの中身の合計"+e);
+
+		System.out.println(cartInfoList.size());
+
+
+		cartDAO.deleteCartInfo(userId);
+		//settlementCompleteDAO.deleteCartInfo(userId);
+}
+}

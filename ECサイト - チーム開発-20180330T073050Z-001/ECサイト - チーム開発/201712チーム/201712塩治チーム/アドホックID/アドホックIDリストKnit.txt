@@ -1,0 +1,7 @@
+ID:kenta Password:kenta123
+ID:zirou Password:zirou123
+ID:tarou Password:tarou123
+ID:saburou Password:saburou123
+ID:takeko Password:takeko123
+ID:matuko Password:matuko123
+ID:admin Password:admin01 *管理者

@@ -1,0 +1,153 @@
+@CHARSET "UTF-8";
+body {
+	width: 1200px;
+	height: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	font-family:'Hiragino Kaku Gothic proN' , Meiryo , sans-serif;
+}
+
+#main{
+	clear:both;
+	width:1200px;
+		height: 1200px;
+	margin:0 auto;
+}
+
+#main .pageback{
+	width:400px;
+	height:10px;
+	margin-left:20px;
+}
+
+#main .title{
+	width:400px;
+	height:10px;
+	margin-left:20px;
+}
+#main .box{
+	width:900px;
+	height:350px;
+	margin:0 auto;
+	}
+
+	.box h3{
+	text-align:center;
+	}
+#main .image_box{
+	float:left;
+	width:400px;
+	height:350px;
+	margin-top:50px;
+}
+.image_box img{
+	width:300px;
+	height:300px;
+	margin-left:30px;
+}
+#main .detail_box{
+	float:left;
+	border: 1px solid #d7d7d7;
+	width:400px;
+	height:350px;
+	padding-left:50px;
+	padding-top:30px;
+}
+#main .product_name_kana{
+	font-size:12px;
+}
+#main .product_name{
+	font-weight:bold;
+	font-size:25px;
+}
+#main .price{
+	font-weight:bold;
+	font-size:22px;
+	margin-left:190px;
+}
+
+#main input{
+	width: 224px;
+	height: 50px;
+	margin-left: 100px;
+	border: none;
+	background-color: #2c2c2c;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	border-radius: 2px;
+	box-shadow: none;
+	font-weight: bold;
+	color: #fff !important;
+	background: linear-gradient(to bottom,  #383838, #1c1c1c);
+	text-align: center;
+	display: block;
+	cursor:pointer;
+}
+
+#main .title2{
+	text-align:center;
+}
+#main .related_product_box{
+	width:800px;
+	height:400px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.related_product_small_box{
+	float:left;
+	width:200px;
+	height:200px;
+	margin-top:30px;
+}
+
+.related_img img{
+	width:120px;
+	height:120px;
+}
+
+#main .related_name{
+	font-size:15px;
+	text-align:center;
+}
+
+#main .related_price{
+	font-size:15px;
+	text-align:center;
+}
+
+#main .review{
+	width:800px;
+	height:200px;
+	margin:0 auto;
+	text-align:center;
+}
+
+#main .review_date{
+	font-size:18px;
+}
+
+#main .review_name_day{
+	font-size:13px;
+}
+
+	#footer {
+	clear:both;
+	width: 1200px;
+	height:50px;
+	margin:0 auto;
+	text-align:center;
+}
+.footer_menu{
+	width:137px;
+	height:30px;
+	margin:0 auto;
+	font-size:12px;
+}
+.footer_menu_1 a{
+	float:left;
+}
+
+.footer_menu_2{
+	float:left;
+}

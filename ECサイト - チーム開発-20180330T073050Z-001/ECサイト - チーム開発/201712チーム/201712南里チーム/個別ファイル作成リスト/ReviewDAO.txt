@@ -1,0 +1,36 @@
+private ArrayList<ReviewDTO> reviewDTOList = new ArrayList<ReviewDTO>();
+
+	/**
+	 * 指定商品のレビュー全表示
+	 * @return
+	 * @throws SQLException
+	 */
+	public ArrayList<ReviewDTO> showAllReview(String itemId) throws SQLException {
+
+		DBConnector dbConnector = new DBConnector();
+		Connection connection = dbConnector.getConnection();
+
+		String sql = "SELECT * FROM review_transaction WHERE item_id = ?";
+
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, itemId);
+			ResultSet resultSet = preparedStatement.executeQuery();
+
+			while (resultSet.next()) {
+				ReviewDTO reviewDTO = new ReviewDTO();
+				reviewDTO.setUserId(resultSet.getString("user_id"));
+				reviewDTO.setItemId(resultSet.getString("item_id"));
+				reviewDTO.setReview(resultSet.getString("review"));
+				reviewDTO.setReviewBody(resultSet.getString("review_body"));
+				reviewDTO.setInsertDate(resultSet.getString("insert_date"));
+				reviewDTOList.add(reviewDTO);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			connection.close();
+		}
+
+		return reviewDTOList;
+	}
